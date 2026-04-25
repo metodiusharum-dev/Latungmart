@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Toko Baju Terlengkap & Termurah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb', // Warna Biru
+                        secondary: '#f97316', // Warna Oranye
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+        }
+    </style>
+</head>
+<body class="font-poppins text-gray-700 overflow-x-hidden scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-3xl font-bold text-primary">
+                    Style<span class="text-secondary">Hub</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="hover:text-primary transition-colors">Beranda</a>
+                    <a href="#produk" class="hover:text-primary transition-colors">Produk</a>
+                    <a href="#kategori" class="hover:text-primary transition-colors">Kategori</a>
+                    <a href="#kontak" class="hover:text-primary transition-colors">Kontak</a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all shadow-md">
+                        Order Via WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-[clamp(2.2rem,5vw,3.8rem)] font-bold text-gray-800 leading-tight">
+                        Tampil Stylish & <span class="text-primary">Percaya Diri</span>
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Koleksi baju terbaru dengan bahan premium, harga bersahabat, dan model yang selalu up-to-date. Cocok untuk gaya kasual, formal, maupun hangout.
+                    </p>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#produk" class="bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all shadow-lg">
+                            Belanja Sekarang
+                        </a>
+                        <a href="#kategori" class="border-2 border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all">
+                            Lihat Kategori
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fashion Model" class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold">Kualitas Terjamin</h3>
+                    <p class="text-gray-500 mt-2">Bahan kain tebal, halus, adem, dan tidak mudah luntur.</p>
+                </div>
+                <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold">Harga Bersahabat</h3>
+                    <p class="text-gray-500 mt-2">Harga grosir & eceran yang sangat kompetitif.</p>
+                </div>
+                <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold">Pengiriman Cepat</h3>
+                    <p class="text-gray-500 mt-2">Packing rapi dan proses pengiriman maksimal 1x24 jam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-gray-800">Produk Pilihan</h2>
+                <p class="text-gray-500 mt-2">Pakaian terbaik yang paling banyak diminati</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kaos Polos" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mb-2">Best Seller</span>
+                        <h3 class="text-xl font-semibold">Kaos Oversize Cotton Combed</h3>
+                        <p class="text-gray-500 text-sm mt-1">Nyaman dipakai, bahan adem, cocok untuk semua acara.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 75.000</span>
+                            <a href="https://wa.me/6281234567890?text=Halo%20kak,%20saya%20mau%20order%20Kaos%20Oversize" class="bg-secondary text-white p-2 rounded-full hover:bg-orange-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jaket" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mb-2">New Arrival</span>
+                        <h3 class="text-xl font-semibold">Jaket Denim Premium</h3>
+                        <p class="text-gray-500 text-sm mt-1">Model kekinian, bahan tebal dan sangat awet.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 150.000</span>
+                            <a href="https://wa.me/6281234567890?text=Halo%20kak,%20saya%20mau%20order%20Jaket%20Denim" class="bg-secondary text-white p-2 rounded-full hover:bg-orange-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584342221576-7f42802f0124?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kemeja" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-600 bg-purple-200 mb-2">Promo</span>
+                        <h3 class="text-xl font-semibold">Kemeja Flanel Tebal</h3>
+                        <p class="text-gray-500 text-sm mt-1">Tersedia berbagai motif dan warna menarik.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 98.000</span>
+                            <a href="https://wa.me/6281234567890?text=Halo%20kak,%20saya%20mau%20order%20Kemeja%20Flanel" class="bg-secondary text-white p-2 rounded-full hover:bg-orange-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0

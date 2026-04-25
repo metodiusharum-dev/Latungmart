@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE Bordir - Baju Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50">
+
+    <div class="max-w-md mx-auto bg-white min-h-screen shadow-lg">
+        
+        <!-- Header -->
+        <div class="text-center py-8 px-6 bg-gradient-to-r from-primary to-blue-600 text-white">
+            <h1 class="text-3xl font-bold">EE BORDIR</h1>
+            <p class="opacity-90 mt-1">Kualitas Premium & Detail Rapi</p>
+        </div>
+
+        <!-- Gambar Produk -->
+        <div class="p-6">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&q=80" alt="Baju Bordir" class="w-full rounded-xl shadow-md">
+        </div>
+
+        <!-- Info Produk -->
+        <div class="px-6 pb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Kemeja Batik Bordir Eksklusif</h2>
+            <div class="flex items-center mt-2">
+                <span class="text-xl font-bold text-red-500 line-through">Rp 250.000</span>
+                <span class="ml-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">DISKON</span>
+            </div>
+            <p class="text-3xl font-bold text-primary mt-1">Rp 185.000</p>
+
+            <!-- Spesifikasi -->
+            <div class="mt-6 space-y-2 text-sm text-gray-600">
+                <p>✅ Bahan Katun Premium, Adem & Tidak Luntur</p>
+                <p>✅ Motif Bordir Halus dan Kuat</p>
+                <p>✅ Tersedia Ukuran M, L, XL, XXL</p>
+                <p>✅ Packing Aman & Rapih</p>
+            </div>
+        </div>
+
+        <!-- Tombol Order -->
+        <div class="px-6 pb-10 sticky bottom-0 bg-white pt-4">
+            <a href="https://wa.me/6281234567890?text=Halo%20kak,%20saya%20mau%20order%20Baju%20Bordir" 
+               class="block w-full bg-green-500 hover:bg-green-600 text-white text-center py-4 rounded-xl font-bold text-lg shadow-lg transition-all">
+               🛒 ORDER SEKARANG VIA WHATSAPP
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
